@@ -1,0 +1,88 @@
+/* Single source of truth for all design tokens. Never hardcode these values. */
+/* Import in globals.css and reference via var() throughout all components.   */
+
+:root {
+  /* === Backgrounds === */
+  --bg-primary:    #0D0E14;   /* main surfaces */
+  --bg-secondary:  #161820;   /* cards, panels */
+  --bg-tertiary:   #1E2030;   /* elevated elements, selected states */
+  --bg-raised:     #272A3D;   /* hover states, chips */
+
+  /* === Gold accent === */
+  --gold:          #C9A84C;   /* primary brand color — use sparingly */
+  --gold-light:    #E8C97A;   /* hover states on gold elements */
+  --gold-dim:      #8A6E30;   /* muted gold, borders */
+  --gold-fill:     rgba(201, 168, 76, 0.12);   /* button hover fill */
+  --gold-border:   rgba(201, 168, 76, 0.35);   /* active card border */
+  --gold-subtle:   rgba(201, 168, 76, 0.20);   /* subtle border */
+
+  /* === Score colors === */
+  --score-green:      #4CAF7A;
+  --score-green-bg:   rgba(76, 175, 122, 0.12);
+  --score-green-border: rgba(76, 175, 122, 0.30);
+  --score-red:        #E05C5C;
+  --score-red-bg:     rgba(224, 92, 92, 0.12);
+  --score-red-border: rgba(224, 92, 92, 0.30);
+  --score-grey:       #7A7E99;
+  --score-grey-bg:    rgba(122, 126, 153, 0.12);
+  --score-grey-border: rgba(122, 126, 153, 0.30);
+
+  /* === Text === */
+  --text-primary:   rgba(255, 255, 255, 0.90);
+  --text-secondary: rgba(255, 255, 255, 0.55);
+  --text-muted:     rgba(255, 255, 255, 0.35);
+
+  /* === Borders === */
+  --border-default: rgba(255, 255, 255, 0.07);
+  --border-subtle:  rgba(201, 168, 76, 0.20);
+  --border-accent:  rgba(201, 168, 76, 0.35);
+
+  /* === Typography === */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-ui:      'DM Sans', system-ui, sans-serif;
+  --font-data:    'DM Mono', 'Courier New', monospace;
+
+  /* === Type scale === */
+  --text-hero:     28px;   /* app name / hero — Cormorant 600 */
+  --text-heading:  22px;   /* page headings — Cormorant 600 */
+  --text-section:  18px;   /* section headings — Cormorant 500 */
+  --text-category: 16px;   /* category titles — Cormorant 500 */
+  --text-paragraph: 18px;  /* daily paragraph — Cormorant 400 */
+  --text-body:     13px;   /* body text — DM Sans 400 */
+  --text-small:    11px;   /* muted text — DM Sans 400 */
+  --text-label:    10px;   /* UI labels — DM Sans 500 uppercase */
+  --text-badge:     9px;   /* score badges — DM Sans 500 uppercase */
+
+  /* === Line heights === */
+  --lh-display:   1.2;
+  --lh-paragraph: 1.8;
+  --lh-body:      1.7;
+
+  /* === Letter spacing === */
+  --ls-label:  0.12em;   /* UI labels */
+  --ls-badge:  0.08em;   /* score badges */
+
+  /* === Spacing === */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+
+  /* === Border radii === */
+  --radius-card:   12px;
+  --radius-button:  8px;
+  --radius-badge:   6px;
+
+  /* === Motion === */
+  --transition-fast:   150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow:   300ms ease;
+  --transition-bg:     400ms ease;
+
+  /* === Layout === */
+  --nav-width: 240px;
+}
