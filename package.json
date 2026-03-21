@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -36,7 +37,14 @@
     "testEnvironment": "node",
     "testMatch": [
       "**/tests/**/*.test.js"
-    ]
+    ],
+    "transform": {
+      "^.+\\.js$": ["babel-jest", {
+        "presets": [
+          ["@babel/preset-env", { "targets": { "node": "current" } }]
+        ]
+      }]
+    }
   },
   "repository": {
     "type": "git",
